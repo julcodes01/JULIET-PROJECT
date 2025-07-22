@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Dashboard</title>
+    <link rel="stylesheet" href="instructor dashboard.css">
+</head>
+<body>
+    <nav>
+        <h2>Instructor Dashboard</h2>
+        <ul>
+            <li><a href="#sessions" id="nav-sessions">Sessions</a></li>
+            <li><a href="#add-session" id="nav-add-session">New Session</a></li>
+        </ul>
+    </nav><main>
+    <section id="sessions" class="content-section">
+        <h3>All Sessions</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Learner</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="sessionsTableBody"></tbody>
+        </table>
+    </section>
+
+    <section id="add-session" class="content-section hidden">
+        <h3>Add New Session</h3>
+        <form id="addSessionForm">
+            <label>Date: <input type="date" name="date" required></label>
+            <label>Time: <input type="time" name="time" required></label>
+            <label>Location: <input type="text" name="location" required></label>
+            <label>Learner:
+                <select name="learner_id" id="learnerSelect"></select>
+            </label>
+            <label>Status:
+                <select name="status">
+                    <option value="Scheduled">Scheduled</option>
+                    <option value="Completed">Completed</option>
+                    <option value="Canceled">Canceled</option>
+                </select>
+            </label>
+            <button type="submit">Add Session</button>
+        </form>
+    </section>
+</main>
+
+<script src="instructor dashbaord.js"></script>
+
+</body>
+</html>

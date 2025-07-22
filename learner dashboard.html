@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learner Dashboard</title>
+    <link rel="stylesheet" href="learner dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome, Juliet Wambui</h1>
+    </header><section id="profile-summary">
+    <h2>Profile Summary</h2>
+    <p>Name: Juliet Wambui</p>
+    <p>License Type: Class B</p>
+    <p>Progress Status: Intermediate</p>
+</section>
+
+<section id="stat-card">
+    <h2>Quick Stats</h2>
+    <div class="card">Total Hours Completed: <span id="hours-completed">12/20</span></div>
+    <div class="card">Total Sessions: <span id="total-sessions">5</span></div>
+    <div class="card">Overall Practical Score: <span id="practical-score">75%</span></div>
+</section>
+
+<section id="training-progress">
+    <h2>Training Progress Chart</h2>
+    <canvas id="progressChart"></canvas>
+</section>
+
+<section id="upcoming-sessions">
+    <h2>Upcoming Sessions</h2>
+    <ul id="sessions-list"></ul>
+</section>
+
+<section id="feedback">
+    <h2>Instructor Feedback</h2>
+    <p>"Work on clutch control when starting uphill."</p>
+</section>
+
+<section id="notifications">
+    <h2>Notifications</h2>
+    <ul id="notifications-list"></ul>
+</section>
+
+<script src="learner dashboard.js"></script>
+
+</body>
+</html>
