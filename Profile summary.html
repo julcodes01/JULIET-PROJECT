@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Instructor - Profile Summary</title>
+  <link rel="stylesheet" href="Profile summary.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Instructor - Profile Summary</h2>
+    
+    <form id="profileSummaryForm" method="POST" action="submit_profile_summary.php">
+      <div class="form-group">
+        <label for="name">Learner Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="licenseType">License Type:</label>
+        <select id="licenseType" name="licenseType" required>
+          <option value="">-- Select License Type --</option>
+          <option value="A">Motorcycle (A)</option>
+          <option value="B">Light Vehicle (B)</option>
+          <option value="C">Heavy Vehicle (C)</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="progress">Progress Status:</label>
+        <select id="progress" name="progress" required>
+          <option value="">-- Select Status --</option>
+          <option value="Beginner">Beginner</option>
+          <option value="In Progress">In Progress</option>
+          <option value="Ready for Test">Ready for Test</option>
+          <option value="Completed">Completed</option>
+        </select>
+      </div>
+
+      <button type="submit">Submit Summary</button>
+    </form>
+
+    <div id="statusMessage"></div>
+  </div>
+
+  <script src="Profile summary.js"></script>
+</body>
+</html>
